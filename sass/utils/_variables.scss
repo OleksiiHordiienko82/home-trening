@@ -1,0 +1,22 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --basic-headers-color: #212121;
+  --basic-content-color: #757575;
+  --backgrouns-secondary-color: #2f303a;
+  --primary-background-color: #fff;
+  --third-background-color: #f5f4fa;
+  --section-pt: 94px;
+  --section-pb: 94px;
+  --common-grey: #afb1b8;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--basic-content-color);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
