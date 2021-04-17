@@ -14,6 +14,7 @@
         crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
 <header class="header">
     <div class="container">
@@ -33,6 +34,11 @@
             </li>
         </ul>
     </nav>
+    <button type="button" class="burger-btn" data-menu-button>
+        <svg class="burger-btn__icon">
+            <use href="./images/sprite.svg#icon-burgersvg"></use>
+        </svg>
+    </button>
     <ul class="address">
    <li class="address__item">
     <a class="address__link" href="mailto:info@devstudio.com" lang="en"><svg class="address__icon">
@@ -47,10 +53,60 @@
    </li>
     </ul>
     </div>
+    <div class="mobail-menu" data-menu>
+        <button type="button" class="mobail-menu__close-btn" data-menu-close>
+            <svg class="mobail-menu__close-icon">
+                <use href="./images/sprite.svg#icon-close-black-1"></use>
+            </svg>
+        </button>
+        <ul class="nav-list-mob">
+            <li class="nav-list-mob__item">
+                <a class="nav-list-mob__link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-list-mob__item">
+                <a class="nav-list-mob__link nav-list-mob__link-active" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-list-mob__item">
+                <a class="nav-list-mob__link" href="">Контакты</a>
+            </li>
+        </ul>
+    
+        <ul class="address-mob">
+            <li class="address-mob__item">
+                <a class="address-mob__phone-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="address-mob__item">
+                <a class="address-mob__mail-link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+            </li>
+    
+        </ul>
+    
+        <ul class="social-mob">
+            <li class="social-mob__item">
+                <a class="social-mob__link" href="https://www.instagram.com/?hl=ru" target="_blank"
+                    rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="social-mob__item">
+                <a class="social-mob__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+    
+            </li>
+            <li class="social-mob__item">
+                <a class="social-mob__link" href="https://www.facebook.com" target="_blank"
+                    rel="noopener noreferrer">Facebook</a>
+    
+            </li>
+            <li class="social-mob__item">
+                <a class="social-mob__link" href="https://www.linkedin.com" target="_blank"
+                    rel="noopener noreferrer">linkedin</a>
+    
+            </li>
+        </ul>
+    
+    </div>
 </header>
     <main>
          <!-- Projects -->
-        <section class="about-buttons-and-cards">
+        <!-- <section class="about-buttons-and-cards">
         <div class="projects container">
        <h1 class="visually-hidden">buttons</h1>  
 
@@ -217,9 +273,9 @@
       </main>
 
         <footer class="footer">
-        <div class="container">
+        <div class="container"> -->
             <!-- Contacts information -->
-            <div class="address-list-link">
+           <!-- <div class="address-list-link">
             <a class="logo logo-footer" lang="en" href="./index.html">
                 Web<span class="logo_dark">Studio</span>
             </a>
@@ -288,8 +344,8 @@
             
         </div>
     
-        </footer>
+        </footer>-->
 
-
+ <script src="./js/mobail-menu.js"></script> 
 </body>
 </html>
