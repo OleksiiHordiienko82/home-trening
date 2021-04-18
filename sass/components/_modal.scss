@@ -36,6 +36,7 @@
   margin-left: 8px;
 }
 
+// ================ phone ================
 .backdrop {
   position: fixed;
   width: 100vw;
@@ -49,8 +50,8 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 580px;
+  max-width: 450px;
+  height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -181,9 +182,13 @@
 }
 
 .modal-form-check-desk {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
   display: flex;
+
   align-items: center;
+
   &::before {
     display: block;
     content: "";
@@ -207,7 +212,6 @@
     outline: 2px solid var(--accent-color);
   }
 }
-
 .modal-form-btn {
   display: block;
   @include font(700, 16px, 1.85);

@@ -172,8 +172,8 @@ svg {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 580px;
+  max-width: 450px;
+  height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -298,7 +298,9 @@ svg {
 }
 
 .modal-form-check-desk {
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
   display: flex;
   align-items: center;
 }
@@ -326,6 +328,10 @@ svg {
 
 .modal-form-term:focus + .modal-form-check-desk::before {
   outline: 2px solid var(--accent-color);
+}
+
+.modal-form-term {
+  white-space: nowrap;
 }
 
 .modal-form-btn {
@@ -616,14 +622,40 @@ svg {
   }
 }
 
+.hero {
+  padding: 118px 0;
+  background-color: var(--backgrouns-secondary-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-1-mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-2-mob@2x.jpg);
+  }
+}
+
+.hero_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .hero_btn {
   display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
-  /*font-weight: 700;
-  font-size: 16px;
-  line-height: 1.85;*/
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
@@ -644,26 +676,43 @@ svg {
   background-color: #188ce8;
 }
 
-.hero_title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  max-width: 696px;
-  margin: 0 auto;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-1-tablet.jpg);
+  }
 }
 
-.hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/hero-background.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--backgrouns-secondary-color);
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-2-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-1-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(62, 63, 77, 0.4)), url(../images/hero/Hero-img-2-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    max-width: 696px;
+    margin: 0 auto;
+    color: #ffffff;
+  }
 }
 
 .cards-title {
