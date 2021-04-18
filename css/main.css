@@ -330,10 +330,6 @@ svg {
   outline: 2px solid var(--accent-color);
 }
 
-.modal-form-term {
-  white-space: nowrap;
-}
-
 .modal-form-btn {
   display: block;
   font-weight: 700;
