@@ -1,3 +1,9 @@
+// ================ phone ================
+
+.works {
+  display: none;
+}
+
 .cards-title {
   @include font(700, 18px, 2);
   /*font-weight: 700;
@@ -14,14 +20,16 @@
   font-size: 14px;
   line-height: 1.14;*/
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
   color: var(--basic-headers-color);
 }
 
 .about {
   background: var(--primary-background-color);
-  padding-top: var(--section-pt);
+  padding: 60px 0;
 }
 
 .works {
@@ -31,6 +39,8 @@
 .about-list__description {
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--basic-content-color);
 }
 
 .description-cards {
@@ -39,31 +49,34 @@
   color: var(--basic-content-color);
 }
 
-.about-list {
+/*.about-list {
   display: flex;
   justify-content: space-between;
   margin-left: -30px;
-}
+}*/
 
-.about-list__item {
-  margin-left: 30px;
+.about-list__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-list__tool {
-  width: 270px;
-  height: 120px;
-  background-color: var(--third-background-color);
+  padding: 25px 0;
+  background: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
-
 .about-list__icon {
-  width: 65px;
+  width: 70px;
   height: 70px;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: var(--section-pt) 0;
+  }
+}
 .works-list {
   display: flex;
   justify-content: space-between;
