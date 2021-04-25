@@ -795,7 +795,6 @@ svg {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .about-list__icon {
@@ -804,9 +803,45 @@ svg {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .about-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .about-list__title {
+    text-align: left;
+  }
+  .about-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .about-us-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--basic-headers-color);
+    margin-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about {
     padding: var(--section-pt) 0;
+  }
+  .works {
+    display: initial;
+  }
+  .about-list__item {
+    width: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -845,20 +880,7 @@ svg {
   color: #ffffff;
 }
 
-.about-us-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  /*font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;*/
-  text-align: center;
-  color: var(--basic-headers-color);
-  margin-bottom: 50px;
-}
-
 .works-us {
-  padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
 
@@ -924,6 +946,15 @@ svg {
   transform: translateY(0);
 }
 
+.about-us-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--basic-headers-color);
+  margin-bottom: 50px;
+}
+
 .our-team-title {
   font-weight: 500;
   font-size: 16px;
@@ -957,20 +988,28 @@ svg {
   overflow: hidden;
 }
 
+.team-list__item ul {
+  display: flex;
+  justify-content: center;
+}
+
 .team-list-content-wrapper {
   padding: 30px 32px;
   text-align: center;
   background-color: white;
 }
 
-.team-list-content-wrapper > ul {
+/*.team-list-content-wrapper > ul {
   display: flex;
   justify-content: center;
-}
-
+}*/
 .team-icon-container-img use {
   fill: var(--common-grey);
   transition: fill var(--timing-function) var(--duration);
+}
+
+.team-list__item {
+  margin-bottom: 30px;
 }
 
 .team-icon-container {
