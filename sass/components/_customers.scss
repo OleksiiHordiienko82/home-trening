@@ -18,8 +18,9 @@
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .customers-list__link {
@@ -31,6 +32,8 @@
   justify-content: center;
   align-items: center;
   transition: border-color var(--timing-function) var(--duration);
+  margin-left: 30px;
+  margin-bottom: 30px;
 
   &:hover .customers-list__icon,
   &:focus .customers-list__icon {
@@ -46,4 +49,9 @@
 .customers-list__icon {
   fill: var(--common-grey);
   transition: var(--timing-function) var(--duration);
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

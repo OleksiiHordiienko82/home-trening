@@ -966,7 +966,7 @@ svg {
 .team {
   background: var(--third-background-color);
   padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
+  padding-bottom: 60px;
 }
 
 .description-team {
@@ -1036,6 +1036,14 @@ svg {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    background: var(--third-background-color);
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
+}
+
 .customers {
   background: var(--primary-background-color);
   padding-top: var(--section-pt);
@@ -1056,8 +1064,9 @@ svg {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
 
 .customers-list__link {
@@ -1069,6 +1078,8 @@ svg {
   justify-content: center;
   align-items: center;
   transition: border-color var(--timing-function) var(--duration);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .customers-list__link:hover .customers-list__icon,

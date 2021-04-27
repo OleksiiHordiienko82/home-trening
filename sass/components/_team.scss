@@ -18,7 +18,7 @@
 .team {
   background: var(--third-background-color);
   padding-top: var(--section-pt);
-  padding-bottom: var(--section-pb);
+  padding-bottom: 60px;
 }
 
 .description-team {
@@ -98,7 +98,9 @@
 }
 
 @media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
+  .team {
+    background: var(--third-background-color);
+    padding-top: var(--section-pt);
+    padding-bottom: var(--section-pb);
+  }
 }
