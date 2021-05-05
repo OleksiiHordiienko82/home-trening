@@ -166,8 +166,27 @@
 // ================ tablet ================
 
 @media screen and (min-width: 768px) {
-}
+  .address-list-link,
+  .social-list-link {
+    margin-bottom: 0;
+    align-items: center;
+  }
 
+  .footer-links-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .logo-footer {
+    margin-bottom: 20px;
+  }
+}
 // ================ desctop ================
 @media screen and (min-width: 1200px) {
   .footer {
@@ -203,6 +222,10 @@
   }
   .address-list__item:not(:last-child) {
     margin-bottom: 9px;
+  }
+
+  .logo {
+    margin-right: 88px;
   }
 
   .logo-footer {
